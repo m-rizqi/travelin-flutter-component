@@ -42,6 +42,7 @@ class TravelinFilledButton extends StatelessWidget {
         backgroundColor: MaterialStateProperty.all(Theme.of(context).colorScheme.primary),
       ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             label,
@@ -50,7 +51,7 @@ class TravelinFilledButton extends StatelessWidget {
             style: TextStyle(
               fontSize: fontSize,
               fontWeight: fontWeight,
-              color: fontColor,
+              color: fontColor ?? Theme.of(context).colorScheme.onPrimary,
               decoration: textDecoration,
               decorationThickness: decorationThickness,
             ),
