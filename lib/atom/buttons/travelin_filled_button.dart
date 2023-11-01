@@ -9,7 +9,7 @@ class TravelinFilledButton extends StatelessWidget {
     this.fontSize,
     this.textAlign = TextAlign.left,
     this.fontWeight = FontWeight.w400,
-    this.fontColor = Colors.black,
+    this.fontColor = Colors.white,
     this.maxLines = 2,
     this.textDecoration,
     this.decorationThickness = 0.35,
@@ -51,7 +51,7 @@ class TravelinFilledButton extends StatelessWidget {
             style: TextStyle(
               fontSize: fontSize,
               fontWeight: fontWeight,
-              color: fontColor ?? Theme.of(context).colorScheme.onPrimary,
+              color: fontColor,
               decoration: textDecoration,
               decorationThickness: decorationThickness,
             ),
